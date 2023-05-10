@@ -74,6 +74,6 @@ public class MarkdownBlockType : BlockType
     public override string ProcessLine(string line)
     {
         // Remove the comment characters from the line
-        return line.Replace("--", "").Trim();
+        return line.Replace("--", "").Trim() + "\n";
     }
 }

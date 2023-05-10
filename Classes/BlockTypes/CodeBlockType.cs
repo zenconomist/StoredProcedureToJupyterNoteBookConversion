@@ -40,7 +40,7 @@ public class CodeBlockType : BlockType
     public override string ProcessLine(string line)
     {
         // Remove the NewCellBegin tag from the line
-        return line;
+        return line + "\n";
     }
 
 }
